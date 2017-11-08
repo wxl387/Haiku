@@ -1,7 +1,7 @@
 // app/routes.js
 
 var mysql = require('mysql');
-var connection = mysql.createConnection(require('../config/connnection.js'));
+var connection = require('../config/connnection.js');
 
 module.exports = function(app, passport) {
     // =====================================
