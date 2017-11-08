@@ -9,7 +9,12 @@ var connection = mysql.createConnection(dbconfig.connection);
 
 connection.query('CREATE DATABASE ' + dbconfig.database);
 
-connection.query('CREATE TABLE ' + dbconfig.database + '.' + dbconfig.posts_table + ' ( post_id int NOT NULL AUTO_INCREMENT,auther int NOT NULL,post CHAR(250),PRIMARY KEY (post_id)\
+connection.query('CREATE TABLE ' + dbconfig.database + '.' + dbconfig.posts_table + ' ( \
+	post_id int NOT NULL AUTO_INCREMENT,auther int NOT NULL,\
+	post_line_1 CHAR(250),\
+	post_line_2 CHAR(250),\
+	post_line_3 CHAR(250),\
+	PRIMARY KEY (post_id)\
 );'
 );
 

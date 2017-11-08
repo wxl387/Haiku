@@ -1,3 +1,4 @@
+Skip to content This repository Search Pull requests Issues Marketplace Explore @wxl387 Sign out Watch 0 Star 0 Fork 0 Hai-ku/Say-ku Code Issues 0 Pull requests 0 Projects 0 Wiki Insights Settings Branch: master Find file Copy pathSay-ku/views/profile.ejs 00d9334 18 minutes ago @BilalZonjy BilalZonjy working 1 contributor RawBlameHistory 100 lines (94 sloc) 4.96 KB
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,14 +15,11 @@
 <body>
     <div class="container">
         <div class="navs">
-            
         </div>
-
         <nav class="navbar" id="nav">
             <a class="logo" id="small-S">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxlZ3ZCDeSOw72yjVkPVxayvHmeYviztULz4piZ6y8so3t5tuaA" width="30" height="30" alt="s-icon">
             </a>
-
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#"><strong>Welcome</strong>:<%= user.username %></a>
@@ -37,7 +35,17 @@
                     <ul>
                         <% for ( i in data) { %>
                             <li class="alert alert-danger">
-                                <%= data[i].post %>
+                                <div class="content">
+                                    <p>
+                                        <%= data[i].post_line_1 %>
+                                    </p>
+                                    <p>
+                                        <%= data[i].post_line_2 %>
+                                    </p>
+                                    <p>
+                                        <%= data[i].post_line_3 %>
+                                    </p>
+                                </div>
                             </li>
                             <% } %>
                     </ul>
@@ -94,3 +102,4 @@
 </body>
 
 </html>
+© 2017 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub API Training Shop Blog About
