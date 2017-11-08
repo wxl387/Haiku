@@ -1,0 +1,68 @@
+.haiku-post {
+	margin-top: 20px;
+}
+body {
+ animation: colorchange 1ms; 
+ -webkit-animation: colorchange 1000s;
+}
+	@keyframes colorchange
+{
+  0%   {background: #730C79;}
+  25%  {background: #2C20CA;}
+  50%  {background: #30AE30;}
+  75%  {background: #F6F440;}
+  100% {background: #93298A;}
+}
+
+ @-webkit-keyframes colorchange
+{
+  0%   {background: #730C79;}
+  25%  {background: #2C20CA;}
+  50%  {background: #30AE30;}
+  75%  {background: #F6F440;}
+  100% {background: #F335BB;}
+}	
+
+nav {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #B6B6B6;
+}
+
+#small-s img {
+	border-radius: 100px;
+}
+
+.logo img {
+	border-radius: 100px;
+}
+
+#create {
+	margin-left: 5px;
+}
+
+#title {
+	font-size: 120px;
+}
+
+.jumbotron {
+	margin: 20px;
+	border-radius: 5px;
+	background: #B6B6B6;
+}
+
+.jumbotron h1 {
+	font-family: "Monotype Corsiva", script;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.haiku-title {
+	font-size:32px;
+	color: white;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}

@@ -1,0 +1,88 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Homepage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./public/css/homepage.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Sayku</h1>
+            
+            <p class="lead">Be Mindful. Stimulate Your Creativity. Destress.</p>
+            
+            <hr class="my-4">
+            
+            <p class="intro-haiku">Writing haikus encourages higher order thinking, stimulates creativity, and allows the writer to practice mindfulness. It can also be used as a tool for learning difficult concepts by asking the writer to apply their knowledge, allowing for enhanced understanding of curriculum.</p>
+            
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+              How do I write a Haiku
+            </button>
+
+            <p></p>
+
+            <div class="user-action">
+                <a href="/login" class="btn btn-primary">Login</a>
+                <a href="/signup" class="btn btn-primary">Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How do I write a Haiku</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>"Haiku" is a traditional form of Japanese poetry. Haiku poems consist of 3 lines. The first and last lines of a Haiku have 5 syllables and the middle line has 7 syllables. The lines rarely rhyme.</p>
+
+                        <hr>
+
+                        Here's a Haiku to help you remember: <br>
+                        <table>
+                            <tr>
+                                <td>I am first with five</th>
+                                <td>5</th>
+                            </tr>
+                            <tr>
+                                <td>Then seven in the middle</th>
+                                <td>7</th>
+                            </tr>
+                            <tr>
+                                <td>Five again to end.</th>
+                                <td>5</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
